@@ -1,0 +1,23 @@
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Node dependencies & builds
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.env.production
+
+# Java / Maven build output
+backend/target/
+backend/uploads/*
+!backend/uploads/.gitkeep
+*.jar
+*.war
+*.apk
+
+# IDE files
+.vscode/
+.idea/
+*.iml
