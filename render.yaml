@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: apkatiffine-backend
+    env: docker
+    dockerfilePath: backend/Dockerfile
+    rootDir: backend
+    plan: free
+    region: oregon
+    envVars:
+      - key: PORT
+        value: "8080"
+      - key: SPRING_JPA_HIBERNATE_DDL_AUTO
+        value: "update"
+      - key: SPRING_DATASOURCE_URL
+        sync: false
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
