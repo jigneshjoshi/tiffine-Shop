@@ -10,7 +10,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/payment/paytm")
-@CrossOrigin(originPatterns = "*", allowCredentials = "true")
 public class PaymentController {
 
     @Autowired
